@@ -1,0 +1,12 @@
+## instrucs minion to look locally for files (rather than via master via pub-sub)
+file_client: local
+
+## salt states & files location
+file_roots:
+	base:
+		- /vagrant/saltstack/salt
+
+## pillar data
+pillar_roots:
+	base:
+		- /vagrant/saltstack/pillar
